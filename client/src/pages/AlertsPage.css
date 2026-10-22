@@ -1,0 +1,49 @@
+.al-page { display: flex; flex-direction: column; }
+
+.al-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+.al-filter-grid .field input,
+.al-filter-grid .field select { width: 100%; }
+.al-filter-grid input[type='date'] { color-scheme: dark; }
+.al-filter-actions { display: flex; gap: 8px; align-items: center; }
+
+.al-summary { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.al-summary-total { font-weight: 700; }
+
+.al-table td, .al-table th { white-space: nowrap; }
+.al-row { cursor: pointer; }
+.al-row-open td { background: rgba(79, 156, 249, 0.08); }
+.al-id { font-family: monospace; color: var(--accent); font-size: 12px; }
+.al-type { text-transform: capitalize; }
+.al-ack { color: var(--muted); font-size: 12px; }
+
+.al-source {
+  display: inline-block; padding: 2px 8px; border-radius: 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.6px;
+}
+.al-source-sim { background: rgba(139, 150, 184, 0.16); color: var(--muted); }
+.al-source-manual { background: rgba(55, 201, 139, 0.15); color: var(--ok); }
+
+.al-details-row > td { background: var(--panel-2); padding: 0; }
+.al-details { padding: 14px 16px; }
+.al-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+.al-detail-grid span {
+  display: block; font-size: 10.5px; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--muted); margin-bottom: 3px;
+}
+.al-detail-grid p {
+  margin: 0; font-size: 13px; color: var(--text);
+  white-space: normal; line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .al-filter-actions { grid-column: 1 / -1; }
+}

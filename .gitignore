@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+build/
+
+# vite cache
+.vite/
+
+# environment files (keep the .env.example templates)
+.env
+.env.local
+.env.*.local
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# local backups of the previous per-folder git repos
+_local_backups/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

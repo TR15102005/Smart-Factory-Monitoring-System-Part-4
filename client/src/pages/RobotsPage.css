@@ -1,0 +1,64 @@
+.rp-page { display: flex; flex-direction: column; }
+
+.rp-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 10px; margin-bottom: 12px;
+}
+.rp-head h2 { margin: 0; }
+
+.rp-filters {
+  display: grid;
+  grid-template-columns: minmax(200px, 2fr) minmax(160px, 1fr) auto;
+  gap: 10px; align-items: end; margin-bottom: 10px;
+}
+@media (max-width: 900px) { .rp-filters { grid-template-columns: 1fr 1fr; } }
+.rp-filter-actions { display: flex; gap: 6px; }
+.rp-chips { margin-bottom: 14px; }
+
+.rp-kind { text-transform: capitalize; }
+
+.rp-row { cursor: pointer; }
+.rp-row-open td { background: rgba(79, 156, 249, 0.07); }
+
+.rp-comm { font-variant-numeric: tabular-nums; color: var(--muted); }
+.rp-comm-stale { color: var(--bad); font-weight: 700; }
+
+.rp-actions { flex-wrap: wrap; max-width: 320px; }
+
+.rp-detail-row td { padding: 0; }
+.rp-detail-row:hover td { background: transparent; }
+.rp-detail {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  background: var(--panel-2); border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); padding: 14px 16px;
+}
+@media (max-width: 900px) { .rp-detail { grid-template-columns: 1fr; } }
+.rp-detail h4 {
+  margin: 0 0 8px; font-size: 12px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.6px;
+}
+
+.rp-list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-direction: column; gap: 6px;
+  max-height: 240px; overflow-y: auto;
+}
+.rp-list li {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 10px; font-size: 12.5px;
+}
+.rp-list li small { margin-left: auto; }
+.rp-maint-type {
+  text-transform: uppercase; font-weight: 700; font-size: 11px;
+  color: var(--accent);
+}
+.rp-maint-notes { flex-basis: 100%; margin-left: 0 !important; color: var(--muted); }
+
+.rp-form {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.rp-form-actions {
+  grid-column: 1 / -1; display: flex; gap: 8px; margin-top: 4px;
+}

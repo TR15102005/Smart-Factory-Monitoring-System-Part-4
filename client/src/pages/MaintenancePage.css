@@ -1,0 +1,60 @@
+.mt-page { display: flex; flex-direction: column; }
+
+.mt-disclaimer {
+  margin: -6px 0 14px;
+  padding: 8px 12px;
+  border-left: 3px solid var(--warn);
+  background: rgba(245, 181, 68, 0.08);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.mt-table td, .mt-table th { vertical-align: top; }
+.mt-robot-id { font-family: monospace; color: var(--accent); font-size: 12px; white-space: nowrap; }
+.mt-type { text-transform: capitalize; }
+.mt-notes { max-width: 260px; white-space: normal; color: var(--muted); font-size: 12.5px; }
+.mt-reco { max-width: 240px; white-space: normal; font-size: 12.5px; }
+
+.mt-conditions ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.mt-conditions li { font-size: 12px; display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.mt-cond-sev {
+  font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+  padding: 1px 6px; border-radius: 999px; flex-shrink: 0;
+}
+.mt-cond-high { background: rgba(242, 109, 109, 0.15); color: var(--bad); }
+.mt-cond-medium { background: rgba(245, 181, 68, 0.15); color: var(--warn); }
+.mt-cond-low { background: rgba(79, 156, 249, 0.15); color: var(--accent); }
+
+.mt-form-panel {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.mt-form-panel .sub-heading { margin-top: 0; }
+
+.mt-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+.mt-form .field input,
+.mt-form .field select,
+.mt-form .field textarea { width: 100%; }
+.mt-form input[type='datetime-local'] { color-scheme: dark; }
+.mt-form-notes { grid-column: 1 / -1; }
+.mt-form-notes textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+}
+.mt-form-notes textarea:focus { outline: none; border-color: var(--accent); }
+.mt-form-submit { justify-self: start; }

@@ -1,0 +1,45 @@
+.st-page { display: flex; flex-direction: column; gap: 4px; }
+
+.st-loading { color: var(--muted); text-align: center; padding: 24px; font-size: 13px; }
+
+.st-form { display: flex; flex-direction: column; gap: 12px; }
+.st-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;
+}
+.st-field input {
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  padding: 9px 10px; border-radius: 8px; font-size: 13px;
+}
+.st-field input:focus { outline: none; border-color: var(--accent); }
+
+.st-check {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: var(--text); cursor: pointer;
+}
+.st-check input { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+
+.st-note {
+  margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6;
+  border-left: 3px solid var(--border); padding-left: 10px;
+}
+
+.st-sim-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.st-sim-head h2 { margin: 0; }
+.st-sim-sub { margin: 6px 0 14px; color: var(--muted); font-size: 12.5px; }
+
+.st-sim-controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-end; }
+.st-speed select {
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  border-radius: 8px; padding: 8px 10px; font-size: 13px;
+}
+.st-speed select:focus { outline: none; border-color: var(--accent); }
+.st-speed span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.st-speed { display: flex; flex-direction: column; gap: 5px; }
+
+.st-audit-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 10px; margin-bottom: 10px;
+}
+.st-audit-head h2 { margin: 0; }
+
+.st-details { max-width: 340px; word-break: break-word; color: var(--muted); font-size: 12px; }

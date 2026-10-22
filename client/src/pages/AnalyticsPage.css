@@ -1,0 +1,22 @@
+.an-page { display: flex; flex-direction: column; gap: 4px; }
+
+.an-filters { display: flex; gap: 14px; align-items: flex-end; flex-wrap: wrap; padding: 14px 18px; }
+.an-filters .field select { min-width: 170px; }
+.an-refreshing { color: var(--muted); font-size: 12.5px; padding-bottom: 8px; }
+
+.an-loading { color: var(--muted); text-align: center; padding: 32px; }
+
+.an-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 980px) { .an-grid { grid-template-columns: 1fr; } }
+
+.an-panel { margin-bottom: 0; }
+.an-panel-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+.an-panel-head h2 { margin: 0; }
+
+.an-chart { position: relative; height: 260px; }
+
+.an-empty {
+  height: 260px; display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 13px; background: var(--panel-2);
+  border: 1px dashed var(--border); border-radius: 10px;
+}
